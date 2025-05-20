@@ -9,7 +9,7 @@
     //icons
 
     //components
-    import Button from "./button.svelte";
+    import Button from "./Button.svelte";
     import { sidebar } from "./states.svelte";
     //components
 
@@ -21,7 +21,7 @@
     Staking: stakingsvg,
     Bridge: bridgesvg,
     Pool: poolsvg,
-    Swap: poolsvg,
+    Swap: poolsvg
     };
 
     let link = $state(

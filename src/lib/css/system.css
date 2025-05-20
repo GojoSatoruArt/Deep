@@ -144,8 +144,10 @@
   --main-cardsub: rgba(16, 10, 26, 1);
   --main-light: white;
   --main-subtext: rgba(255, 255, 255, 0.55);
-  --main-stroke: rgba(255, 255, 255, 0.05);
+  --main-stroke: rgba(255, 255, 255, 0.07);
+  --main-stroke-hover: rgba(255, 255, 255, 0.2);
   --main-button-hover: rgba(235, 219, 255, 0.02);
+  --primary-button-hover: rgba(235, 219, 255, 0.02);
   /* Color */
 
   /* Spacing */
@@ -191,11 +193,12 @@ ol[role="list"] {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 0.87rem;
 }
 
 button {
-  font-size: 0.875rem;
+  font-size: 0.87rem;
+  white-space: nowrap;
 }
 
 a {
