@@ -1,0 +1,251 @@
+@tailwind utilities;
+@import "tailwindcss";
+
+/* GeneralSans */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Extralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-ExtralightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/fonts/GeneralSans-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Satoshi */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  /* Color */
+  --main-bg: rgba(7, 2, 13, 1);
+  --main-primary: rgba(194, 177, 255, 1);
+  --main-dark: rgba(10, 12, 19, 1);
+  --main-cardbg: rgba(14, 10, 20, 1);
+  --main-cardsub: rgba(16, 10, 26, 1);
+  --main-light: white;
+  --main-subtext: rgba(255, 255, 255, 0.55);
+  --main-stroke: rgba(255, 255, 255, 0.05);
+  --main-button-hover: rgba(235, 219, 255, 0.02);
+  /* Color */
+
+  /* Spacing */
+  --spacing-container: 75rem;
+  --spacing-button-y: 0.625rem;
+  --spacing-button-x: 0.875rem;
+  --spacing-padding: 0.875rem;
+  --spacing-content: 0.625rem;
+  --spacing-gap: 0.875rem;
+  /* Spacing */
+
+  /* Font */
+  --font-display: "GeneralSans", sans-serif;
+  /* Font */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: var(--main-bg);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+button {
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+button {
+  line-height: 1rem;
+}
+
+#left-side,
+#top-side,
+#right-side,
+#bottom-side {
+  position: absolute;
+  background: none transparent;
+  width: 0px;
+  height: 0px;
+}
+
+#bottom-side {
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 1px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
