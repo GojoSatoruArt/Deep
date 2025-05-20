@@ -1,11 +1,9 @@
 <script>
     import '$lib/css/system.css'
-    import Button from '$lib/components/Button.svelte'
     import Section from '$lib/components/Section.svelte'
     import Container from '$lib/components/Container.svelte'
     import Sidebar from '$lib/components/Sidebar.svelte';
     import { sidebar } from '$lib/components/states.svelte';
-    import Search from '$lib/components/Search.svelte';
     import Topnav from '$lib/components/Topnav.svelte';
 </script>
 
