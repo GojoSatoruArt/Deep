@@ -52,7 +52,7 @@
     {#each link as links}
             <button
             class:active={$sidebar === links}
-            class="flex justify-start items-center w-full bg-(--main-button) hover:px-2 py-(--spacing-padding) rounded-md border-1 border-transparent transition-all ease-in duration-100  hover:border-(--main-stroke) gap-2 opacity-25 hover:opacity-50" on:click={()=>tabstate(links)}>
+            class="flex justify-start items-center w-full bg-(--main-button) hover:px-2 py-(--spacing-padding) rounded-md border-1 border-transparent transition-all ease-in duration-75  hover:border-(--main-stroke) gap-2 opacity-25 hover:opacity-50" on:click={()=>tabstate(links)}>
             {#if icons[links]} {@html icons[links]} {/if} {links}</button>
             {/each}
     </div>
