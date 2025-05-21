@@ -27,7 +27,7 @@
 
     <div class="flex justify-between items-end w-full">
 
-        <div class="flex flex-col justify-center items-start gap-3">   
+        <div class="flex flex-col justify-center items-start gap-1">   
             <p class="font-bold text-[2rem]">Liquid Staking Suite</p>
             <p class="text-[1rem] opacity-75">Manage and grow your assets with real-time rewards tracking and flexible Ethereum staking strategies.</p>
         </div>
@@ -49,6 +49,29 @@
 
     
 </div>
+
+
+<div class="flex justify-between items-center w-full p-(--spacing-padding) rounded-2xl border-1 border-(--main-stroke)">
+
+    <div class="flex justify-center items-center gap-3">   
+        <div class="flex flex-col justify-center items-start gap-1">   
+            <p class="opacity-75">Recommended coins for 24 Hours</p>
+            <p class="font-bold text-[1.5rem]">Top Staking Assets</p>
+        
+        </div>
+    </div>
+
+    <div>
+        
+        <Button
+        variant = 'secondary'
+        name = 'Hide Feature'
+        />
+    </div>    
+    
+</div>
+
+
 
 
 
