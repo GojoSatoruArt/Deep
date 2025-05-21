@@ -1,10 +1,10 @@
 <script>
     import '$lib/css/system.css'
-    import Section from '$lib/components/Section.svelte'
-    import Container from '$lib/components/Container.svelte'
-    import Sidebar from '$lib/components/Sidebar.svelte';
+    import Section from '$lib/components/section.svelte'
+    import Container from '$lib/components/container.svelte'
+    import Sidebar from '$lib/components/sidebar.svelte';
     import { sidebar } from '$lib/components/states.svelte';
-    import Topnav from '$lib/components/Topnav.svelte';
+    import Topnav from '$lib/components/topnav.svelte';
     import Dashboard from './Dashboard.svelte';
     import Assets from './Assets.svelte';
     import Staking from './Staking.svelte';

@@ -9,7 +9,7 @@
     //icons
 
     //components
-    import Button from "./Button.svelte";
+    import Button from "./button.svelte";
     import { sidebar } from "./states.svelte";
     //components
 
