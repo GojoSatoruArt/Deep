@@ -1,6 +1,6 @@
 <script>
-    import Button from '$lib/components/Button.svelte'
-    import Search from '$lib/components/Search.svelte';
+    import Button from '$lib/components/button.svelte'
+    import Search from '$lib/components/search.svelte';
 </script>
 
 <div class="topnav-content flex justify-between items-center w-full h-auto p-(--spacing-padding) border-1 rounded-md border-(--main-stroke) bg-(--main-cardbg) gap-2">
