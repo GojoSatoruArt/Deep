@@ -253,3 +253,11 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+.cds--cc--grid rect.chart-grid-backdrop {
+  fill: transparent !important;
+}
+
+.cds--cc--chart-wrapper .stroke-1-1-1 {
+  stroke: #23fed9 !important;
+}

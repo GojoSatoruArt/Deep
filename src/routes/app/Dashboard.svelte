@@ -4,6 +4,7 @@
     import Container from '$lib/components/container.svelte';
     import Cardbg from '$lib/components/topasset.svelte';
     import { register } from 'swiper/element/bundle';
+
     register();
 
     
@@ -93,11 +94,8 @@
                         <Cardbg/>
                     </swiper-slide>
                     <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
-                    </swiper-slide>
-                    <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
-                    </swiper-slide>
+               
+                  
                    
                   </swiper-container>
           </div>     
