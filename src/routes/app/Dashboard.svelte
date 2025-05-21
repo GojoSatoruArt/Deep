@@ -3,14 +3,16 @@
     import Button from '$lib/components/button.svelte';
 </script>
 
-<div class="flex flex-col justify-between items-start w-full h-50 bg-(--main-cardbg) rounded-md border-1 border-(--main-stroke) p-5">
+<div class="feature flex flex-col justify-between items-start w-full h-auto bg-(--main-cardbg) rounded-2xl  border-(--main-stroke) p-5 gap-15">
 
     <div class="flex justify-between items-center w-full">
 
         <div class="flex justify-center items-center gap-3">   
             {@html brandlogo}
             <p class="font-bold text-[1.1rem]">DeepStake</p>
-            <div class="tag button flex justify-center items-center px-2 py-2  bg-transaparent text-(--main-light) rounded-lg border-1 border-(--main-stroke) font-medium"><p class="text-[0.8rem]">New Feature</p></div>
+            <div class="tag button flex justify-center items-center px-2 py-2  bg-transaparent text-(--main-light) rounded-lg border-1 border-(--main-stroke) font-medium">
+                <p class="text-[0.8rem]">New Feature</p>
+            </div>
         </div>
 
         <div>
@@ -23,10 +25,11 @@
     </div>
 
 
-    <div class="flex justify-between items-center w-full">
+    <div class="flex justify-between items-end w-full">
 
-        <div class="flex justify-center items-center gap-3">   
+        <div class="flex flex-col justify-center items-start gap-3">   
             <p class="font-bold text-[2rem]">Liquid Staking Suite</p>
+            <p class="text-[1rem] opacity-75">Manage and grow your assets with real-time rewards tracking and flexible Ethereum staking strategies.</p>
         </div>
 
         <div class="flex flex-row justify-center items-center gap-2">
@@ -43,4 +46,15 @@
     </div>
 
     
+
+    
 </div>
+
+
+
+
+<style>
+    .feature{
+        background: radial-gradient(120% 140.13% at 50% 20%, transparent 40.41%, rgb(14, 117, 128) 69.27%);
+    }
+</style>
