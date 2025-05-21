@@ -1,6 +1,6 @@
 <script>
     import brandlogo from '../../../static/icons/brandlogo.svg?raw'
-    import Button from '$lib/components/Button.svelte';
+    import Button from '$lib/components/button.svelte';
 </script>
 
 <div class="flex flex-col justify-between items-start w-full h-50 bg-(--main-cardbg) rounded-md border-1 border-(--main-stroke) p-5">
