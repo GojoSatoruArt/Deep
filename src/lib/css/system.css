@@ -137,17 +137,17 @@
 
 @theme {
   /* Color */
-  --main-bg: rgba(7, 2, 13, 1);
-  --main-primary: rgba(194, 177, 255, 1);
+  --main-bg: rgba(2, 2, 2, 1);
+  --main-primary: rgba(255, 255, 255, 0.05);
   --main-dark: rgba(10, 12, 19, 1);
-  --main-cardbg: rgba(14, 10, 20, 1);
+  --main-cardbg: rgba(255, 255, 255, 0.03);
   --main-cardsub: rgba(16, 10, 26, 1);
   --main-light: white;
   --main-subtext: rgba(255, 255, 255, 0.55);
-  --main-stroke: rgba(255, 255, 255, 0.07);
+  --main-stroke: rgba(255, 255, 255, 0.04);
   --main-stroke-hover: rgba(255, 255, 255, 0.2);
-  --main-button-hover: rgba(235, 219, 255, 0.02);
-  --primary-button-hover: rgba(235, 219, 255, 0.02);
+  --main-button-hover: rgba(235, 255, 255, 0.03);
+  --primary-button-hover: rgba(255, 255, 255, 0.02);
   /* Color */
 
   /* Spacing */
@@ -156,7 +156,7 @@
   --spacing-button-x: 0.875rem;
   --spacing-padding: 0.875rem;
   --spacing-content: 0.625rem;
-  --spacing-gap: 0.875rem;
+  --spacing-gap: 1.5rem;
   /* Spacing */
 
   /* Font */
@@ -193,11 +193,11 @@ ol[role="list"] {
 }
 
 p {
-  font-size: 0.87rem;
+  font-size: 1rem;
 }
 
 button {
-  font-size: 0.87rem;
+  font-size: 0.875rem;
   white-space: nowrap;
 }
 
