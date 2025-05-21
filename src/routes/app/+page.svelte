@@ -1,4 +1,5 @@
 <script>
+
     import '$lib/css/system.css'
     import Section from '$lib/components/section.svelte'
     import Container from '$lib/components/container.svelte'
@@ -10,6 +11,7 @@
     import Staking from './Staking.svelte';
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
+   
 
     let tab = {
         Dashboard: Dashboard,
@@ -22,7 +24,7 @@
 
     <Section>
     <Sidebar/>
-            <div class="topnav flex flex-col justify-center items-center w-full h-full py-[0.1rem] px-2 gap-2">
+            <div class="main-content flex flex-col justify-center items-center w-full h-full py-[0.1rem] px-2 gap-2 overflow-x-hidden">
            <Topnav/>
         
            <div class="flex flex-col justify-start items-center w-full h-full py-(--spacing-gap) overflow-x-scroll gap-5">
@@ -33,11 +35,11 @@
                 </div>
             </Container>
 
-            <Container>
+           
             {#key sidebar}
             <svelte:component this={tab[$sidebar]} />
             {/key}
-            </Container>
+           
 
            </div>       
         </div>

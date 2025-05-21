@@ -1,5 +1,6 @@
 @tailwind utilities;
 @import "tailwindcss";
+@import "swiper/css";
 
 /* GeneralSans */
 @font-face {
@@ -151,7 +152,7 @@
   /* Color */
 
   /* Spacing */
-  --spacing-container: 75rem;
+  --spacing-container: 80rem;
   --spacing-button-y: 0.625rem;
   --spacing-button-x: 0.875rem;
   --spacing-padding: 0.875rem;
