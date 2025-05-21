@@ -32,7 +32,7 @@
 
         <div class="flex flex-col justify-center items-start gap-1">   
             <p class="font-bold text-[2rem]">Liquid Staking Suite</p>
-            <p class="text-[1rem] opacity-75">Manage and grow your assets with real-time rewards tracking and flexible Ethereum staking strategies.</p>
+            <p class="opacity-50">Manage and grow your assets with real-time rewards tracking and flexible Ethereum staking strategies.</p>
         </div>
 
         <div class="flex flex-row justify-center items-center gap-2">
@@ -58,7 +58,7 @@
 
     <div class="flex justify-center items-center gap-3">   
         <div class="flex flex-col justify-center items-start gap-1">   
-            <p class="opacity-75">Recommended coins for 24 Hours</p>
+            <p class="opacity-50 ">Recommended coins for 24 Hours</p>
             <p class="font-bold text-[1.5rem]">Top Staking Assets</p>
         </div>
     </div>
