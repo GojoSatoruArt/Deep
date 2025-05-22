@@ -12,7 +12,7 @@
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
     import Gap from '$lib/components/gap.svelte';
-   
+    import { onMount } from 'svelte';
 
     let tab = {
         Dashboard: Dashboard,
@@ -21,13 +21,29 @@
         Bridge: Bridge,
         Pool: Pool
     } 
+
+    let isMobile = false;
+
+    function updateIsMobile() {
+    isMobile = window.innerWidth <= 768; // 768px is a common mobile breakpoint
+  }
+  onMount(() => {
+    updateIsMobile(); // Initial check
+    window.addEventListener('resize', updateIsMobile);
+    return () => window.removeEventListener('resize', updateIsMobile); // Cleanup on destroy
+  });
+  
 </script>
 
     <Section>
        
-    <Sidebar/>
-            <div class="main-content flex flex-col justify-center items-center w-full h-full py-[0.1rem] px-2 gap-2 overflow-x-hidden">
+        {#if !isMobile}
+        <Sidebar/>
+        {/if}
+
+            <div class="main-content flex flex-col justify-center items-center w-full h-full py-[0.1rem] px-1 md:px-2 gap-2 overflow-x-hidden">
                 
+               
            <Topnav/>
         
            <div class="flex flex-col justify-start items-center w-full h-full py-(--spacing-gap) overflow-x-scroll gap-5">

@@ -8,8 +8,9 @@
     <div class="flex flex-row justify-between items-center position-card w-full">
 
     <div class="flex flex-row justify-start items-center w-full"> 
-    <div class="flex flex-row justify-center items-center gap-2"> 
+    <div class="flex flex-col md:flex-row justify-center items-start md:items-center gap-2"> 
     <div class="flex justify-center items-center size-12  rounded-lg border-1 border-(--main-stroke)">icon</div>
+    
     <div class="flex flex-col justify-start items-start">
         <p class="font-medium text-[1.1rem] font-[GeneralSans]">Shib Token</p> 
         <p class="opacity-55 text-sm">Shiba Inu</p>
@@ -20,13 +21,15 @@
     </div>
 
     <div class="flex flex-col justify-end items-end"> 
+
+
     <div class="opacity-55 text-sm whitespace-nowrap">Current Staked / Balance</div>
     <p class="font-medium text-[1.5rem] font-[GeneralSans]">240,106,890</p> 
     </div>
 
     </div>
 
-    <div class="flex flex-row justify-between items-center position-card w-full">
+    <div class="flex flex-wrap justify-between items-center position-card w-full">
 
         <div class="flex flex-col justify-start items-start"> 
         <div class="opacity-55 text-sm whitespace-nowrap">Price</div>
