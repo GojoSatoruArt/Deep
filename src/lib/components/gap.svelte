@@ -1,0 +1,1 @@
+<div class="line w-full h-[1px] bg-(--main-stroke)"></div>

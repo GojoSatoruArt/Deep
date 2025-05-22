@@ -1,12 +1,12 @@
 export const chartData = [
-  { group: "ETH", date: "2025-05-21", value: 90.5 },
-  { group: "ETH", date: "2025-05-21", value: 90.75 },
-  { group: "ETH", date: "2025-05-21", value: 84.2 },
-  { group: "ETH", date: "2025-05-21", value: 24.1 },
-  { group: "ETH", date: "2025-05-21", value: 100.3 },
-  { group: "ETH", date: "2025-05-21", value: 10.8 },
-  { group: "ETH", date: "2025-05-21", value: 12.15 },
-  { group: "ETH", date: "2025-05-22", value: 58.65 },
+  { group: "ETH", date: "2025-05-21", value: 24.5 },
+  { group: "ETH", date: "2025-05-21", value: 25.75 },
+  { group: "ETH", date: "2025-05-21", value: 24.2 },
+  { group: "ETH", date: "2025-05-21", value: 55.1 },
+  { group: "ETH", date: "2025-05-21", value: 24.3 },
+  { group: "ETH", date: "2025-05-21", value: 55.8 },
+  { group: "ETH", date: "2025-05-21", value: 76.15 },
+  { group: "ETH", date: "2025-05-22", value: 90.65 },
 ];
 
 export const chartData2 = [

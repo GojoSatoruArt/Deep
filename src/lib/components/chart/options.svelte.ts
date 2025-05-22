@@ -2,24 +2,21 @@ export let optionsSvelte = {
   color: {
     gradient: {
       enabled: true,
+      colors: ["#FF4D4F", "#D9363E"],
     },
   },
   axes: {
     bottom: {
       mapsTo: "date",
       scaleType: "time",
-      visible: false, // hide x-axis
+      visible: false,
+      // hide x-axis
     },
     left: {
       mapsTo: "value",
       scaleType: "linear",
       visible: false,
-      domain: [25, 120], // hide y-axis
-    },
-    color: {
-      gradient: {
-        enabled: true,
-      },
+      // hide y-axis
     },
   },
 

@@ -37,18 +37,20 @@
 <div class="sidebar flex flex-col justify-start items-between w-60 h-full  rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg)">
 
     <!-- Sidebar Brand-->
-    <div class="sidebar-brand flex justify-start items-center w-full px-5 py-5 border-b-1 border-(--main-stroke) gap-3">
+    <div class="sidebar-brand flex justify-start items-center w-full px-3 py-5 border-b-1 border-(--main-stroke) gap-3">
     {@html brandlogo}
     <p class="font-bold text-[1.2rem]">DeepStake</p>
     </div>
     <!-- Sidebar Brand-->
 
     <!-- Sidebar Link-->
-    <div class="sidebar-link flex flex-col justify-start items-start w-full h-full px-5 py-2 gap-0">
+    
+    <div class="sidebar-link flex flex-col justify-start items-start w-full h-full px-3 py-3 gap-0">
+        <div class="opacity-25 pb-1"><p>General</p></div>
     {#each link as links}
             <button
             class:active={$sidebar === links}
-            class="flex justify-start items-center w-full bg-(--main-button) hover:px-1 py-(--spacing-padding) rounded-md border-1 border-transparent transition-all ease-in duration-75  gap-2 opacity-25 hover:opacity-50" on:click={()=>tabstate(links)}>
+            class="flex justify-start items-center w-full bg-(--main-button) hover:px-1 py-(--spacing-padding) rounded-md border-1 border-transparent transition-all ease-in duration-75  gap-3 opacity-25 hover:opacity-50" on:click={()=>tabstate(links)}>
             {#if icons[links]} {@html icons[links]} {/if} {links}</button>
             {/each}
     </div>
@@ -61,7 +63,7 @@
                 <div class="wallet-info flex flex-col justify-center items-stretch gap-5">
                     <div class="wallet flex flex-row justify-start items-center   gap-2">
                         <div class="size-7 bg-(--main-stroke) rounded-full"></div>
-                        <p class="whitespace-nowrap mr-3">No Wallet Connected</p>
+                        <p class="whitespace-nowrap mr-3">Wallet Info</p>
                     </div>
                     <Button/>
                 </div>
@@ -84,7 +86,7 @@
     .active{
         opacity: 100;
         font-weight: 500;
-        padding-left: 0.5rem;
+        
 
     }
 </style>

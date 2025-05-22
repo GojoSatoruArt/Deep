@@ -1,3 +1,3 @@
-<div class="mainsection w-full h-dvh flex justify-between items-start p-[0.5rem] gap-[0.2rem] overflow-x-hidden">
+<div class="mainsection w-full h-dvh flex justify-between items-start py-[0.5rem] pl-[0.5rem] overflow-x-hidden">
     <slot/>
 </div> 

@@ -11,6 +11,7 @@
     import Staking from './Staking.svelte';
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
+    import Gap from '$lib/components/gap.svelte';
    
 
     let tab = {
@@ -23,18 +24,17 @@
 </script>
 
     <Section>
+       
     <Sidebar/>
             <div class="main-content flex flex-col justify-center items-center w-full h-full py-[0.1rem] px-2 gap-2 overflow-x-hidden">
+                
            <Topnav/>
         
            <div class="flex flex-col justify-start items-center w-full h-full py-(--spacing-gap) overflow-x-scroll gap-5">
+            
 
-            <Container>
-                <div class="flex justify-start items-start w-full"> 
-                    <p class="text-[1.2rem] font-medium">{$sidebar}</p>
-                </div>
-            </Container>
-
+           
+            
            
             {#key sidebar}
             <svelte:component this={tab[$sidebar]} />
