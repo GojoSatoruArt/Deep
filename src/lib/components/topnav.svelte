@@ -26,7 +26,7 @@
  
     {#if $searchFocused}
 
-    <div in:fly={{ y: -100 }} out:fly={{ y: -100 }}  class="flex flex-col justify-center items-center absolute top-18 left-0 z-100 w-full h-auto rounded-lg bg-[#0A0A0A] border-1 border-(--main-stroke) p-(--spacing-padding) gap-3">
+    <div in:fly={{ y: -100, duration: 150 }} out:fly={{ y: -100, duration: 150 }} class="flex flex-col justify-center items-center absolute top-18 left-0 z-100 w-full h-auto rounded-lg bg-[#0A0A0A] border-1 border-(--main-stroke) p-(--spacing-padding) gap-3">
         <div class="search-title w-full"> 
             <p class="font-medium font-[GeneralSans] text-[1.5rem]">Search: {$searchQuery}</p>
         </div>
