@@ -13,6 +13,7 @@
     import Pool from './Pool.svelte'
     import Gap from '$lib/components/gap.svelte';
     import { onMount } from 'svelte';
+    import Navmobile from '$lib/components/navmobile.svelte';
 
     let tab = {
         Dashboard: Dashboard,
@@ -45,6 +46,10 @@
                 
                
            <Topnav/>
+           {#if isMobile}
+           <Navmobile/>
+           {/if}
+         
         
            <div class="flex flex-col justify-start items-center w-full h-full py-(--spacing-gap) overflow-x-scroll gap-5">
             
