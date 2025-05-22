@@ -35,14 +35,14 @@
 
     
 </script>
-<div class="sidebar w-full rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg) px-2">
+<div class="sidebar w-full rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg) px-5 py-1">
 
 
     <!-- Sidebar Link-->
     
     <div class="sidebar-link flex justify-between flex-row w-full h-auto">
 
-        <swiper-container slides-per-view="auto" space-between="10">
+        <swiper-container slides-per-view="auto" space-between="25">
             {#each link as links}
               <swiper-slide class="flex justify-center items-center w-fit">
                 <button
