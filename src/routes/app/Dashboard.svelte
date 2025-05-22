@@ -4,16 +4,20 @@
     import Container from '$lib/components/container.svelte';
     import Cardbg from '$lib/components/topasset.svelte';
     import { register } from 'swiper/element/bundle';
+    import { chartData } from '$lib/components/chart/chart.svelte';
+    import { chartData2 } from '$lib/components/chart/chart.svelte';
+    import { chartData3 } from '$lib/components/chart/chart.svelte';
+    import { chartData4 } from '$lib/components/chart/chart.svelte';
+    import { chartData5 } from '$lib/components/chart/chart.svelte';
+    import usdc from '../../../static/icons/usdc.svg?raw'
+    import usdt from '../../../static/icons/usdt.svg?raw'
+    import dai from '../../../static/icons/dai.svg?raw'
+    import wbtc from '../../../static/icons/wbtc.svg?raw'
 
     register();
-
-    
-
-    
 </script>
 
 <Container>
-
 <div class="feature flex flex-col justify-between items-start w-full h-auto bg-(--main-cardbg) rounded-2xl  border-(--main-stroke) p-5 gap-15 ">
 
     <div class="flex justify-between items-center w-full">
@@ -82,16 +86,47 @@
         <div class="swiper flex flex-row justify-start items-start w-full rounded-2xl overflow-x-hidden gap-3">
                 <swiper-container  slides-per-view="auto" space-between="10">
                     <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
+                        <Cardbg
+                        chartData = {chartData}
+                        profit = '58.65'
+                        token = 'ETH'
+                        color = #627EEA/>
                     </swiper-slide>
                     <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
+                        <Cardbg
+                        chartData = {chartData2}
+                        profit = '80.91'
+                        token = 'USDT'
+                        icon = {usdt}
+                        color = #26A17B
+                        />
                     </swiper-slide>
                     <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
+                        <Cardbg
+                        chartData = {chartData3}
+                        profit = '92.2'
+                        token = 'USDC'
+                        icon = {usdc}
+                        color = #3E73C4 
+                    />
                     </swiper-slide>
                     <swiper-slide class="flex justify-center items-center w-auto">
-                        <Cardbg/>
+                        <Cardbg
+                        chartData = {chartData4}
+                        profit = '55.23'
+                        token = 'DAI'
+                        icon = {dai}
+                        color = #F4B731 
+                        />
+                    </swiper-slide>
+                    <swiper-slide class="flex justify-center items-center w-auto">
+                        <Cardbg
+                        chartData = {chartData5}
+                        profit = '31.23'
+                        token = 'WBTC'
+                        icon = {wbtc}
+                        color = #312E39 
+                        />
                     </swiper-slide>
                     <swiper-slide class="flex justify-center items-center w-auto">
                
@@ -107,6 +142,4 @@
     .feature{
         background: radial-gradient(120% 140.13% at 50% 20%, transparent 40.41%, rgb(14, 117, 128) 69.27%);
     }
-
-    
 </style>
