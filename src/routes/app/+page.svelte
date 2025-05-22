@@ -42,7 +42,7 @@
         <Sidebar/>
         {/if}
 
-            <div class="main-content flex flex-col justify-center items-center w-full h-full py-0 md:py-[0.1rem] px-0 md:px-2 gap-1 overflow-x-hidden">
+            <div class="main-content flex flex-col justify-center items-center w-full h-full py-0 md:py-[0.1rem] px-0 md:px-2 overflow-x-hidden">
                 
                
            <Topnav/>

@@ -35,7 +35,7 @@
 
     
 </script>
-<div class="sidebar w-full rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg) px-5 py-1">
+<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) px-5 py-1">
 
 
     <!-- Sidebar Link-->

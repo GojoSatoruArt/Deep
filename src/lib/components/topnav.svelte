@@ -23,7 +23,7 @@
     
 </script>
 <div class="topnav-wrap w-full px-0 md:px-2 py-[0.1rem]"> 
-<div class="topnav-content relative flex justify-between items-center w-full h-auto p-(--spacing-padding) border-1 rounded-md border-(--main-stroke) bg-(--main-cardbg) gap-5">
+<div class="topnav-content relative flex justify-between items-center w-full h-auto p-(--spacing-padding) border-1 rounded-0 md:rounded-md border-(--main-stroke) bg-(--main-cardbg) gap-5">
                 
     <div class="flex flex-row justify-center items-center gap-2">
         {#if $isMobile}
