@@ -26,7 +26,7 @@
 
     </div>
 
-    <div class="flex flex-row justify-between items-center position-card w-full px-5">
+    <div class="flex flex-row justify-between items-center position-card w-full">
 
         <div class="flex flex-col justify-start items-start"> 
         <div class="opacity-55 text-sm whitespace-nowrap">Price</div>
