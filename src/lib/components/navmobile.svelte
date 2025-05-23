@@ -5,14 +5,12 @@
     import assetsvg from '../../../static/icons/assets.svg?raw'
     import poolsvg from '../../../static/icons/pool.svg?raw'
     import stakingsvg from '../../../static/icons/staking.svg?raw'
+    //icons
     import { register } from 'swiper/element/bundle';
     import { gsap } from 'gsap';
     import { Flip } from "gsap/Flip";
     gsap.registerPlugin(Flip);
-    
-    import { onMount, tick } from 'svelte';
     register();
-    //icons
 
     //components
     import { sidebar } from "./states.svelte";
@@ -30,8 +28,7 @@
     let link = $state(
         ['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']
         );  
-    
-        async function tabstate(tab) {
+        function tabstate(tab) {
         sidebar.set(tab);
         }
     //function
