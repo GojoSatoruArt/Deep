@@ -31,12 +31,10 @@
         <div class="sidebar-brand flex justify-center items-center w-full gap-2">
             <div class="flex justify-center items-center w-4">{@html brandlogo} </div>
             <p class="font-bold text-[1rem]">DeepStake</p>
-            </div>
-
-            {:else}
-            <p class="font-medium">{$sidebar}</p>
+        </div>
+        {:else}
+        <p class="font-medium">{$sidebar}</p>
         {/if}
-        
     </div>
     
 
