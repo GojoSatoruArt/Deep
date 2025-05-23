@@ -25,7 +25,7 @@ import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
 
 <div class="sidebar flex w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg)">
     <!-- Sidebar Link-->
-        <swiper-container class="w-full" slides-per-view="auto" space-between="10" css-mode="false" speed="400">
+        <swiper-container class="w-full" slides-per-view="auto" space-between="5" css-mode="false" speed="400">
             {#each link as links}
               <swiper-slide class="w-fit">
                 <button class:active={$sidebar === links}

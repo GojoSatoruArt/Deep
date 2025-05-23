@@ -44,7 +44,10 @@
    
     <div class="flex justify-end items-center w-full gap-2">
         <Search/>
+        {#if $isMobile}
         <button on:click={() => $isMobileProfile = !$isMobileProfile} class="size-8 rounded-full bg-(--main-cardbg) border-1 border-(--main-stroke) opacity-55"> {@html profile} </button>
+        {/if}
+        
         {#if !$isMobile}
         <Button name='Deposit'/> <Button name='Withdraw Funds'/>
         <Button variant='secondary' name='Settings'/>
