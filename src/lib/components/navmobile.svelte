@@ -35,29 +35,21 @@
 
 </script>
 
-<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) pr-0 py-0">
+<div class="sidebar flex w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg)">
     <!-- Sidebar Link-->
-    <div class="sidebar-link flex justify-between flex-row h-auto">
-        <swiper-container class="w-full" slides-per-view="auto" space-between="0" css-mode="false" speed="400">
+        <swiper-container class="" slides-per-view="auto" space-between="0" css-mode="false" speed="400">
             {#each link as links}
-              <swiper-slide class="flex justify-center items-center w-fit">
-                <button
-                  class:active={$sidebar === links}
-                  class="relative flex justify-center items-center w-auto py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25  hover:opacity-50"
-                  on:click={() => tabstate(links)}
-                >
-                  {#if icons[links]}
-                    {@html icons[links]}
-                  {/if}
-                  {links}
-                </button>
+              <swiper-slide class="w-auto">
+                <button class:active={$sidebar === links}
+                  class="relative flex justify-center items-center w-auto h-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50"
+                  on:click={() => tabstate(links)}>
+                  {#if icons[links]}{@html icons[links]}{/if}{links}</button>
                 {#if $sidebar === links }
                 <div data-flip-id="line" class="size-5 absolute bottom-0 w-full h-[1px] bg-white">hello</div>
                 {/if}
               </swiper-slide>
             {/each}
           </swiper-container>
-        </div>
     <!-- Sidebar Link-->
     </div>
 
