@@ -21,16 +21,12 @@
     } 
 
     let isMobile = false;
-    // if (typeof window !== 'undefined') {
-    //     isMobile = window.innerWidth <= 768;
-    // }
-    // function updateIsMobile() {
-    // isMobile = window.innerWidth <= 768; // 768px is a common mobile breakpoint
-    // }
-    // onMount(() => {
-    //     window.addEventListener('resize', updateIsMobile);
-    //     return () => window.removeEventListener('resize', updateIsMobile);
-    // });
+    
+    if (typeof window !== 'undefined') {
+        isMobile = window.innerWidth <= 768;
+    }
+   
+    
 
 </script>
 
