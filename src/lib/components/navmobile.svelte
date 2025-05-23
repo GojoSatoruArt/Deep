@@ -53,7 +53,7 @@
 
     <!-- Sidebar Link-->
     <div class="sidebar-link flex justify-between flex-row h-auto">
-        <swiper-container class="w-full" slides-per-view="auto" space-between="0">
+        <swiper-container class="w-full" slides-per-view="auto" space-between="0" css-mode="false" speed="400">
             {#each link as links}
               <swiper-slide class="flex justify-center items-center w-fit">
                 <button
