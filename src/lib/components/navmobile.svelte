@@ -34,9 +34,8 @@
     //function
 
 </script>
+
 <div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) pr-0 py-0">
-
-
     <!-- Sidebar Link-->
     <div class="sidebar-link flex justify-between flex-row h-auto">
         <swiper-container class="w-full" slides-per-view="auto" space-between="0" css-mode="false" speed="400">
@@ -59,13 +58,12 @@
             {/each}
           </swiper-container>
         </div>
+    <!-- Sidebar Link-->
     </div>
 
 <style>
     .active{
         opacity: 100;
         font-weight: 500;
-        
-
     }
 </style>
