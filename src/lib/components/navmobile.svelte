@@ -32,20 +32,9 @@
         );  
     
         async function tabstate(tab) {
-        const state = Flip.getState("[data-flip-id='line']");
         sidebar.set(tab);
-        await tick(); // wait for DOM to update
-        Flip.from(state, {
-        duration: 1,
-        ease: "power1.inOut",
-        absolute: true,
-        });
         }
     //function
-
-     //Animation
-
-    //Animation
 
 </script>
 <div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) pr-0 py-0">

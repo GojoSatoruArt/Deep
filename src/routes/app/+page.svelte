@@ -11,7 +11,6 @@
     import Staking from './Staking.svelte';
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
-    import Gap from '$lib/components/gap.svelte';
     import { onMount } from 'svelte';
     import Navmobile from '$lib/components/navmobile.svelte';
 
