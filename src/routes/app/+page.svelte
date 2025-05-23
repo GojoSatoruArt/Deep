@@ -9,6 +9,7 @@
     import Staking from './Staking.svelte';
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
+    import { onMount } from 'svelte';
     import { sidebar } from '$lib/components/states.svelte';
 
     let tab = {
@@ -20,8 +21,11 @@
     } 
 
     let isMobile = false;
-
-  
+    
+    onMount(() => {
+    isMobile = window.innerWidth <= 768;
+  });
+   
     
 
 </script>
