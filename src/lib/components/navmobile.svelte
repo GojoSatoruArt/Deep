@@ -6,11 +6,15 @@
     import poolsvg from '../../../static/icons/pool.svg?raw'
     import stakingsvg from '../../../static/icons/staking.svg?raw'
     import { register } from 'swiper/element/bundle';
+    import { gsap } from 'gsap';
+    import { Flip } from "gsap/Flip";
+    gsap.registerPlugin(Flip);
+    
+    import { onMount, tick } from 'svelte';
     register();
     //icons
 
     //components
-    import Button from "./button.svelte";
     import { sidebar } from "./states.svelte";
     //components
 
@@ -26,28 +30,35 @@
     let link = $state(
         ['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']
         );  
-        
-        function tabstate(tab) {
-            sidebar.set(tab)
-            console.log($state.snapshot(tab))
+    
+        async function tabstate(tab) {
+        const state = Flip.getState("[data-flip-id='line']");
+        sidebar.set(tab);
+        await tick(); // wait for DOM to update
+        Flip.from(state, {
+        duration: 1,
+        ease: "power1.inOut",
+        absolute: true,
+        });
         }
     //function
 
-    
+     //Animation
+
+    //Animation
+
 </script>
-<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) px-5 py-1">
+<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) px-0 py-0">
 
 
     <!-- Sidebar Link-->
-    
-    <div class="sidebar-link flex justify-between flex-row w-full h-auto">
-
-        <swiper-container slides-per-view="auto" space-between="25">
+    <div class="sidebar-link flex justify-between flex-row h-auto">
+        <swiper-container slides-per-view="auto" space-between="">
             {#each link as links}
               <swiper-slide class="flex justify-center items-center w-fit">
                 <button
                   class:active={$sidebar === links}
-                  class="flex justify-center items-center w-full py-(--spacing-padding) rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50"
+                  class="relative flex justify-center items-center w-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25  hover:opacity-50"
                   on:click={() => tabstate(links)}
                 >
                   {#if icons[links]}
@@ -55,10 +66,13 @@
                   {/if}
                   {links}
                 </button>
+                {#if $sidebar === links }
+                <div data-flip-id="line" class="size-5 absolute bottom-0 w-full h-[1px] bg-white">hello</div>
+                {/if}
               </swiper-slide>
             {/each}
           </swiper-container>
-    </div>
+        </div>
     </div>
 
 <style>
