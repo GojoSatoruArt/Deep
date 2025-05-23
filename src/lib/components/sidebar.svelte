@@ -34,7 +34,7 @@
 
     
 </script>
-<div class="sidebar flex flex-col justify-start items-between w-60 h-full  rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg)">
+<div class="sidebar hidden md:flex flex-col justify-start items-between w-60 h-full  rounded-lg border-1 border-(--main-stroke) bg-(--main-cardbg)">
 
     <!-- Sidebar Brand-->
     <div class="sidebar-brand flex justify-start items-center w-full px-3 py-5 border-b-1 border-(--main-stroke) gap-3">

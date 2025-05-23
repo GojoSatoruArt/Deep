@@ -12,46 +12,38 @@
     import { isMobile } from './states.svelte'
     import { isMobileProfile } from './states.svelte'
 
-    function updateIsMobile() {$isMobile = window.innerWidth <= 768; }   
-    onMount(() => {
-    updateIsMobile(); // Initial check
-    window.addEventListener("resize", updateIsMobile);
-    return () => window.removeEventListener("resize", updateIsMobile); // Cleanup on destroy
-    });
+    
 
     </script>
-
-
-
-
-
-
+    
 <div class="topnav-wrap w-full px-0 z-200 md:px-2 py-[0.1rem]"> 
 <div class="topnav-content relative flex justify-between items-center w-full h-auto p-(--spacing-padding) border-b-1 md:border-1 rounded-0 md:rounded-md border-(--main-stroke) bg-(--main-cardbg) gap-5">
                 
     <div class="flex flex-row justify-center items-center gap-2">
-        {#if $isMobile}
-        <div class="sidebar-brand flex justify-center items-center w-full gap-2">
+ 
+        <div class="sidebar-brand flex md:hidden justify-center items-center w-full gap-2">
             <div class="flex justify-center items-center w-4">{@html brandlogo} </div>
             <p class="font-bold text-[1rem]">DeepStake</p>
         </div>
-        {:else}
-        <p class="font-medium">{$sidebar}</p>
-        {/if}
+   
+        <p class="hidden md:flex font-medium">{$sidebar}</p>
+      
     </div>
     
 
    
     <div class="flex justify-end items-center w-full gap-2">
         <Search/>
-        {#if $isMobile}
-        <button on:click={() => $isMobileProfile = !$isMobileProfile} class="size-8 rounded-full bg-(--main-cardbg) border-1 border-(--main-stroke) opacity-55"> {@html profile} </button>
-        {/if}
+      
+        <button on:click={() => $isMobileProfile = !$isMobileProfile} class="flex md:hidden size-8 rounded-full bg-(--main-cardbg) border-1 border-(--main-stroke) opacity-55"> {@html profile} </button>
+     
         
-        {#if !$isMobile}
+       <div class="hidden md:flex gap-2">
         <Button name='Deposit'/> <Button name='Withdraw Funds'/>
         <Button variant='secondary' name='Settings'/>
-        {/if}
+       </div>
+        
+    
      
     </div>
  
@@ -66,8 +58,6 @@
         </div>
     </div>
     {/if}
-
-    
 </div>
 </div>
 

@@ -1,6 +1,6 @@
 <script>
-//icons
-import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
+    //icons
+    import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
     import bridgesvg from '../../../static/icons/bridge.svg?raw'
     import assetsvg from '../../../static/icons/assets.svg?raw'
     import poolsvg from '../../../static/icons/pool.svg?raw'
@@ -23,7 +23,7 @@ import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
 
 </script>
 
-<div class="sidebar flex w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg)">
+<div class="sidebar flex md:hidden w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg)">
     <!-- Sidebar Link-->
         <swiper-container class="w-full" slides-per-view="auto" space-between="5" css-mode="false" speed="400">
             {#each link as links}
