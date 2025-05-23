@@ -26,11 +26,11 @@
     Swap: poolsvg
     };
     let link = $state(
-        ['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']
-        );  
-        function tabstate(tab) {
-        sidebar.set(tab);
-        }
+    ['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']);  
+
+    function tabstate(tab) {
+    sidebar.set(tab);
+    }
     //function
 
 </script>
