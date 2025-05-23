@@ -25,15 +25,15 @@ import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
 
 <div class="sidebar flex w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg)">
     <!-- Sidebar Link-->
-        <swiper-container class="" slides-per-view="auto" space-between="0" css-mode="false" speed="400">
+        <swiper-container class="w-full" slides-per-view="auto" space-between="10" css-mode="false" speed="400">
             {#each link as links}
-              <swiper-slide class="w-auto">
+              <swiper-slide class="w-fit">
                 <button class:active={$sidebar === links}
-                  class="relative flex justify-center items-center w-auto h-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50"
+                  class="relative flex justify-center items-center w-auto h-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50 text-[1rem]"
                   on:click={() => tabstate(links)}>
-                  {#if icons[links]}{@html icons[links]}{/if}{links}</button>
+                  {links}</button>
                 {#if $sidebar === links }
-                <div data-flip-id="line" class="size-5 absolute bottom-0 w-full h-[1px] bg-white">hello</div>
+                <div data-flip-id="line" class="size-5 absolute bottom-0 w-full h-[1px] bg-white"></div>
                 {/if}
               </swiper-slide>
             {/each}
