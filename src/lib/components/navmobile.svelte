@@ -1,6 +1,6 @@
 <script>
-    //icons
-    import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
+//icons
+import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
     import bridgesvg from '../../../static/icons/bridge.svg?raw'
     import assetsvg from '../../../static/icons/assets.svg?raw'
     import poolsvg from '../../../static/icons/pool.svg?raw'
@@ -17,17 +17,8 @@
     //components
 
     //function
-    let icons = {
-    Dashboard: dashboardsvg,
-    Assets: assetsvg,
-    Staking: stakingsvg,
-    Bridge: bridgesvg,
-    Pool: poolsvg,
-    Swap: poolsvg
-    };
-    let link = $state(
-    ['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']);  
-
+    let icons = { Dashboard: dashboardsvg, Assets: assetsvg, Staking: stakingsvg, Bridge: bridgesvg, Pool: poolsvg, Swap: poolsvg};
+    let link = $state(['Dashboard', 'Assets', 'Staking', 'Bridge', 'Pool', 'Swap']);  
     function tabstate(tab) {
     sidebar.set(tab);
     }

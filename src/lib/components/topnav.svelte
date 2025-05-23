@@ -1,15 +1,16 @@
 <script>
     import brandlogo from '../../../static/icons/brandlogo.svg?raw'
+    import profile from '../../../static/icons/profile.svg?raw'
     import Button from '$lib/components/button.svelte'
-    import Search from '$lib/components/search.svelte';
-    import Gap from './gap.svelte';
-    import { sidebar } from './states.svelte';
-    import { searchQuery } from './states.svelte';
-    import { searchFocused } from './states.svelte';
-    import { fly } from 'svelte/transition';
-    import { onMount } from 'svelte';
-    import { isMobile } from './states.svelte';
-    
+    import Search from '$lib/components/search.svelte'
+    import Gap from './gap.svelte'
+    import { sidebar } from './states.svelte'
+    import { searchQuery } from './states.svelte'
+    import { searchFocused } from './states.svelte'
+    import { fly } from 'svelte/transition'
+    import { onMount } from 'svelte'
+    import { isMobile } from './states.svelte'
+
 
     function updateIsMobile() {
     $isMobile = window.innerWidth <= 768; // 768px is a common mobile breakpoint
@@ -27,9 +28,9 @@
                 
     <div class="flex flex-row justify-center items-center gap-2">
         {#if $isMobile}
-        <div class="sidebar-brand flex justify-start items-center w-full gap-3">
-            {@html brandlogo}
-            <p class="font-bold text-[1.2rem]">DeepStake</p>
+        <div class="sidebar-brand flex justify-center items-center w-full gap-2">
+            <div class="flex justify-center items-center w-4">{@html brandlogo} </div>
+            <p class="font-bold text-[1rem]">DeepStake</p>
             </div>
 
             {:else}
@@ -42,6 +43,7 @@
    
     <div class="flex justify-end items-center w-full gap-2">
         <Search/>
+        <div class="size-8 rounded-full bg-(--main-cardbg) border-1 border-(--main-stroke) opacity-55"> {@html profile} </div>
         {#if !$isMobile}
         <Button name='Deposit'/> <Button name='Withdraw Funds'/>
         <Button variant='secondary' name='Settings'/>

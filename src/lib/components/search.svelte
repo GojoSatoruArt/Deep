@@ -14,7 +14,7 @@ function handleKeydown(event){
     on:focus={() => $searchFocused = true}
     on:blur={() => $searchFocused = false}
     on:keydown = {handleKeydown}
-    class="w-33 md:w-75 placeholder:text-(--main-light) placeholder:opacity-35 text-(--main-light) text-sm border border-(--main-stroke) rounded-md pl-3 py-2 transition-all duration-300 ease focus:outline-none focus:border-(--main-stroke-hover) hover:border-(--main-stroke-hover) shadow-sm focus:shadow focus:w-full"
+    class="w-33 md:w-75 placeholder:text-(--main-light) placeholder:opacity-35 text-(--main-light) text-sm border border-(--main-stroke) rounded-md pl-3 py-2 transition-all duration-300 ease focus:outline-none focus:border-(--main-stroke-hover) hover:border-(--main-stroke-hover) shadow-sm focus:shadow focus:w-full text-2xl"
     placeholder="Search Coins" bind:value={$searchQuery}/>
     <div class="size-4 absolute inset-y-0 right-2 top-[11px] flex items-center opacity-50">
         {@html Search}
