@@ -48,17 +48,17 @@
     //Animation
 
 </script>
-<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) px-0 py-0">
+<div class="sidebar w-full border-b-1 border-(--main-stroke) bg-(--main-cardbg) pr-0 py-0">
 
 
     <!-- Sidebar Link-->
     <div class="sidebar-link flex justify-between flex-row h-auto">
-        <swiper-container slides-per-view="auto" space-between="">
+        <swiper-container class="w-full" slides-per-view="auto" space-between="0">
             {#each link as links}
               <swiper-slide class="flex justify-center items-center w-fit">
                 <button
                   class:active={$sidebar === links}
-                  class="relative flex justify-center items-center w-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25  hover:opacity-50"
+                  class="relative flex justify-center items-center w-auto py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25  hover:opacity-50"
                   on:click={() => tabstate(links)}
                 >
                   {#if icons[links]}

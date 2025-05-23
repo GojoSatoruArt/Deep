@@ -23,23 +23,30 @@
         Pool: Pool
     } 
 
+
+
     let isMobile = false;
+
+    if (typeof window !== 'undefined') {
+        isMobile = window.innerWidth <= 768;
+    }
 
     function updateIsMobile() {
     isMobile = window.innerWidth <= 768; // 768px is a common mobile breakpoint
   }
+
+  
   onMount(() => {
-    updateIsMobile(); // Initial check
-    window.addEventListener('resize', updateIsMobile);
-    return () => window.removeEventListener('resize', updateIsMobile); // Cleanup on destroy
-  });
+        window.addEventListener('resize', updateIsMobile);
+        return () => window.removeEventListener('resize', updateIsMobile);
+    });
   
 </script>
 
     <Section>
        
         {#if !isMobile}
-        <Sidebar/>
+        <Sidebar/>   
         {/if}
 
             <div class="main-content flex flex-col justify-center items-center w-full h-full py-0 md:py-[0.1rem] px-0 md:px-2 overflow-x-hidden">
