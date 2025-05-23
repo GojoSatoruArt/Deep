@@ -29,7 +29,7 @@ import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
             {#each link as links}
               <swiper-slide class="w-fit">
                 <button class:active={$sidebar === links}
-                  class="relative flex justify-center items-center w-auto h-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50 text-[1rem]"
+                  class="relative flex justify-center items-center w-auto h-full py-(--spacing-padding) px-5 rounded-md border-1 border-transparent transition-all ease-in duration-75 gap-1 opacity-25 hover:opacity-50"
                   on:click={() => tabstate(links)}>
                   {links}</button>
                 {#if $sidebar === links }
