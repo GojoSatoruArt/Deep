@@ -25,9 +25,7 @@
 
     <Container>
         <div class="feature flex flex-col justify-between items-start w-full h-auto bg-(--main-cardbg) rounded-2xl  border-(--main-stroke) p-4 gap-15 md:gap-25">
-        
-            <div class="flex justify-between items-start w-full">
-        
+            <div class="flex justify-between items-start w-full">        
                 <div class="flex flex-col md:flex-row justify-start items-start md:items-center gap-3">   
                     {@html brandlogo}
                     <p class="font-bold text-[1.1rem]">DeepStake</p>
@@ -35,64 +33,38 @@
                         <p class="text-[0.8rem]">New Feature</p>
                     </div>
                 </div>
-        
                 <div>
-                    <Button
-                    variant = 'secondary'
-                    name = 'Hide Feature'
-                    />
+                    <Button variant = 'secondary' name = 'Hide Feature'/>
                 </div>    
                 
             </div>
-        
-        
+    
             <div class="flex flex-col sm:flex-row justify-between items-end w-full gap-10 md:gap-10">
-        
                 <div class="flex flex-col justify-center items-start gap-1">   
                     <p class="font-medium font-[GeneralSans] text-[1.5rem]">Liquid Staking Suite</p>
                     <p class="opacity-50">Manage and grow your assets with real-time rewards tracking and flexible Ethereum staking strategies.</p>
                 </div>
-        
                 <div class="flex flex-row justify-center items-center gap-2">
-                    <Button
-                    variant = 'primary'
-                    name = 'Connect Wallet'
-                    />
-                    <Button
-                    variant = 'secondary'
-                    name = 'Enter Wallet Address'
-                    />
+                    <Button variant = 'primary'name = 'Connect Wallet'/>
+                    <Button variant = 'secondary' name = 'Enter Wallet Address'/>
                 </div>    
-                
             </div>
-         
         </div>
-        
-        
     </Container>
  
     <Container>
             <div class="flex flex-col justify-between items-center w-full rounded-2xl tborder-1 border-(--main-stroke) gap-2">
-        
                 <div class="flex flex-col md:flex-row justify-between items-start w-full">
-            
                     <div class="flex justify-center items-center gap-3 mb-2">   
                         <div class="flex flex-col justify-center items-start gap-1">   
                             <p class="opacity-50 ">Recommended coins for 24 Hours</p>
                             <p class="font-medium font-[GeneralSans] text-[1.5rem]">Top Staking Assets</p>
                         </div>
-                
                     </div>
-                
                     <div>
-                        <Button
-                        variant = 'secondary'
-                        name = '24 Hours'
-                        />
+                        <Button variant = 'secondary' name = '24 Hours'/>
                     </div>   
-            
                 </div>
-            
                     <div class="swiper flex flex-row justify-start items-start w-full rounded-2xl overflow-x-hidden gap-3">
                             <swiper-container  slides-per-view="auto" space-between="10">
                                 <swiper-slide class="flex justify-center items-center w-auto">
@@ -143,23 +115,15 @@
                       </div>     
             </div>    
     </Container>
-        
         <Gap/>
-        
-
-
         <Container>
-
-
-<div class="flex flex-col md:flex-row justify-between items-start w-full mb-2">
-            
-    <div class="flex justify-center items-center">   
-        <div class="flex flex-col justify-center items-start gap-1 mb-2">   
+        <div class="flex flex-col md:flex-row justify-between items-start w-full mb-2">       
+            <div class="flex justify-center items-center">   
+                <div class="flex flex-col justify-center items-start gap-1 mb-2">   
             <p class="opacity-50 ">Latest earning assets with 24h insights</p>
             <p class="font-medium font-[GeneralSans] text-[1.5rem]">Ongoing Positions</p>
         </div>
     </div>
-
     <div class="flex justify-between md:justify-between items-center w-full md:w-auto flex-row gap-3">
         <Button
         variant = 'secondary'
@@ -183,21 +147,8 @@
                     <Position/>
                    <Position/>
                     </div>
-           
-           
-        
-
-
-
         </Container>
-
-
 </div>
-
-
-
-
-
 <style>
     .feature{
         background: radial-gradient(120% 140.13% at 50% 20%, transparent 40.41%, rgb(14, 117, 128) 69.27%);

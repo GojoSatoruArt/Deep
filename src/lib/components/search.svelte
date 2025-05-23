@@ -2,6 +2,7 @@
 import { searchQuery } from "./states.svelte";
 import { searchFocused } from "./states.svelte";
 import Search from '../../../static/icons/search.svg?raw'
+
 function handleKeydown(event){
     if (event.key === 'Escape'){
         event.target.blur();

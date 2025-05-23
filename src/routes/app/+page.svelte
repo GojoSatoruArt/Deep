@@ -21,27 +21,17 @@
     } 
 
     let isMobile = false;
-    
     onMount(() => {
     isMobile = window.innerWidth <= 768;
   });
-   
-    
-
 </script>
 
     <Section>
-       
         {#if !isMobile} <Sidebar/> {/if}
-
             <div class="main-content flex flex-col justify-center items-center w-full h-full py-0 md:py-[0.1rem] px-0 md:px-2 overflow-x-hidden">
-            
            <Topnav/> {#if isMobile}<Navmobile/> {/if}
-      
            <div class="flex flex-col justify-start items-center w-full h-full py-(--spacing-gap) overflow-x-scroll gap-5">
- 
             {#key sidebar} <svelte:component this={tab[$sidebar]}/> {/key}
-
            </div>       
         </div>
-</Section>
+    </Section>

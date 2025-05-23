@@ -7,9 +7,6 @@ import dashboardsvg from '../../../static/icons/dashboard.svg?raw'
     import stakingsvg from '../../../static/icons/staking.svg?raw'
     //icons
     import { register } from 'swiper/element/bundle';
-    import { gsap } from 'gsap';
-    import { Flip } from "gsap/Flip";
-    gsap.registerPlugin(Flip);
     register();
 
     //components
