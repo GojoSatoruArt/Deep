@@ -20,7 +20,7 @@
         Pool: Pool
     } 
 
-    // let isMobile = false;
+    let isMobile = false;
     // if (typeof window !== 'undefined') {
     //     isMobile = window.innerWidth <= 768;
     // }
