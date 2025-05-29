@@ -5,14 +5,12 @@
     import Search from '$lib/components/search.svelte'
     import Gap from './gap.svelte'
     import { fly } from 'svelte/transition'
-    import { onMount } from 'svelte'
     import { sidebar } from './states.svelte'
     import { searchQuery } from './states.svelte'
     import { searchFocused } from './states.svelte'
-    import { isMobile } from './states.svelte'
     import { isMobileProfile } from './states.svelte'
 
-    
+    let setting = 'Setting'
 
     </script>
     
@@ -40,7 +38,7 @@
         
        <div class="hidden md:flex gap-2">
         <Button name='Deposit'/> <Button name='Withdraw Funds'/>
-        <Button variant='secondary' name='Settings'/>
+        <Button onClick={() => $sidebar = setting} variant='secondary' name='Settings'/>
        </div>
         
     

@@ -15,6 +15,7 @@
     import { chartData5 } from '$lib/components/chart/chart.svelte';
     import Gap from '$lib/components/gap.svelte'
     import Position from '$lib/components/position.svelte';
+    import Title from '$lib/components/title.svelte';
     
     register();
 </script>
@@ -56,10 +57,10 @@
             <div class="flex flex-col justify-between items-center w-full rounded-2xl tborder-1 border-(--main-stroke) gap-2">
                 <div class="flex flex-col md:flex-row justify-between items-start w-full">
                     <div class="flex justify-center items-center gap-3 mb-2">   
-                        <div class="flex flex-col justify-center items-start gap-1">   
-                            <p class="opacity-50 ">Recommended coins for 24 Hours</p>
-                            <p class="font-medium font-[GeneralSans] text-[1.5rem]">Top Staking Assets</p>
-                        </div>
+                        <Title
+                        title = 'Top Staking Assets'
+                        subtitle = 'Recommended coins for 24 Hours'/>
+
                     </div>
                     <div>
                         <Button variant = 'secondary' name = '24 Hours'/>
@@ -119,10 +120,9 @@
         <Container>
         <div class="flex flex-col md:flex-row justify-between items-start w-full mb-2">       
             <div class="flex justify-center items-center">   
-                <div class="flex flex-col justify-center items-start gap-1 mb-2">   
-            <p class="opacity-50 ">Latest earning assets with 24h insights</p>
-            <p class="font-medium font-[GeneralSans] text-[1.5rem]">Ongoing Positions</p>
-        </div>
+                <Title
+                title = 'Ongoing Positions'
+                subtitle = 'Latest earning assets with 24h insights'/>
     </div>
     <div class="flex justify-between md:justify-between items-center w-full md:w-auto flex-row gap-3">
         <Button
@@ -136,16 +136,58 @@
 </div>
 
             <div class="flex flex-col md:flex-row justify-center items-center w-full gap-2">
-            <Position/>
-           <Position/>
+            <Position
+            icon ='icon'
+        token = 'Shib Token'
+        balance = '240,106,890'
+        price = '2,621'
+        ratio = '2:1'
+        rewards = '210.23'
+        lock = 'Locked'/>
+           <Position
+           icon="eth"
+	token="Ethereum"
+	balance="1.24"
+	price="3,110"
+	ratio="3:2"
+	rewards="12.6"
+	lock="Locked" />
             </div>
             <div class="flex flex-col md:flex-row justify-center items-center w-full gap-2">
-                <Position/>
-               <Position/>
+                <Position
+                icon="usdt"
+	token="Tether"
+	balance="5,000"
+	price="1.00"
+	ratio="1:1"
+	rewards="0.00"
+	lock="Unlocked"/>
+               <Position
+               icon="ada"
+	token="Cardano"
+	balance="12,345"
+	price="0.49"
+	ratio="2:3"
+	rewards="3.18"
+	lock="Locked" />
                 </div>
                 <div class="flex flex-col md:flex-row justify-center items-center w-full gap-2">
-                    <Position/>
-                   <Position/>
+                    <Position
+                    icon="doge"
+	token="Dogecoin"
+	balance="420,000"
+	price="0.082"
+	ratio="5:1"
+	rewards="25.9"
+	lock="Unlocked"/>
+                   <Position
+                   icon="avax"
+	token="Avalanche"
+	balance="320.18"
+	price="36.10"
+	ratio="4:1"
+	rewards="8.75"
+	lock="Unlocked"/>
                     </div>
         </Container>
 </div>

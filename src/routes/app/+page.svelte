@@ -9,6 +9,7 @@
     import Staking from './Staking.svelte';
     import Bridge from './Bridge.svelte'; 
     import Pool from './Pool.svelte'
+    import Setting from './Setting.svelte';
     import { sidebar } from '$lib/components/states.svelte';
 
     let tab = {
@@ -16,7 +17,8 @@
         Assets: Assets,
         Staking: Staking,
         Bridge: Bridge,
-        Pool: Pool
+        Pool: Pool,
+        Setting: Setting
     } 
 </script>
     <Section>
